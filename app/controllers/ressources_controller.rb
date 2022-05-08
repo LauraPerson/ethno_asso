@@ -15,9 +15,10 @@ class RessourcesController < ApplicationController
   end 
 
   def create
-    @ressources = Ressource.new(ressource_params)
-    @ressources.save 
-    redirect_to ressource_path(@ressources)
+    @ressource = Ressource.new(ressource_params)
+    @ressource.user = current_user
+    @ressource.save 
+    redirect_to ressources_path(@ressource)
 
   end
 
