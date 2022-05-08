@@ -1,4 +1,8 @@
+<h1>Tous nos articles</h1>
+
 <% @articles.each do |article| %>
+  <%= article.user.email %>
   <%= article.title %>
   <%= article.content %>
+  <br>
 <% end %>

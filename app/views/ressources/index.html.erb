@@ -1,4 +1,8 @@
+<h1>Toutes nos ressources</h1>
+
 <% @ressources.each do |r| %>
- <p>1 - <%= r.title %> :   <%= r.content %></p> 
+ <%= r.user.email %>
+ <%= r.title %>
+<%= r.content %>
  <br>
 <% end %>
