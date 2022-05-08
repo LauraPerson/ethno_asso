@@ -1,22 +1,26 @@
 class ArticlesController < ApplicationController
 
   def index
-    @articles = Article.all
+    @articles = policy_scope(Article.all)
   end
 
   def show 
     @article = Article.find(params[:id])
+    authorize @article
   end
 
 
 
   def new
     @article = Article.new
+    authorize @article
+
   end 
 
   def create
     @article = Article.new(article_params)
     @article.user = current_user
+    authorize @article
     @article.save 
     redirect_to article_path(@article)
 
