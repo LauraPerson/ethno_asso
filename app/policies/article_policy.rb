@@ -6,7 +6,7 @@ class ArticlePolicy < ApplicationPolicy
   end
 
   def create?
-    true
+    user.admin?
   end
 
   def show?
