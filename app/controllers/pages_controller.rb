@@ -6,6 +6,8 @@ class PagesController < ApplicationController
   end 
 
   def about
+    @users = User.all
+    @admin_users = @users.where(admin: true)
   end 
 
   def contact

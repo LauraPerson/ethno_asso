@@ -1,8 +1,8 @@
+@import "config/colors";
+@import "config/text";
+@import "components/index";
 
-
- @import "config/colors";
- @import "config/text";
-
- @import "components/index";
-
+h1 {
+  color: $primary;
+}
 

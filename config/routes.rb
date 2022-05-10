@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   resources :articles
   resources :ressources
-  resources :users,  only: [:show]
+  resources :users
 
 
 

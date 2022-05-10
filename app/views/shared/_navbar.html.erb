@@ -3,7 +3,9 @@
     <%= link_to image_tag("logo.png", height: 80), root_path%>
   </div>
   <div>
-    <%= link_to image_tag("profil.jpg"), user_path(current_user), id:"avatar"%>
+    <%= link_to user_path(current_user) do %>
+     <%= image_tag "profil.jpg", class:"avatar avatar-small" %>
+    <% end %>
     <div>
       <% if user_signed_in? %>
         <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
