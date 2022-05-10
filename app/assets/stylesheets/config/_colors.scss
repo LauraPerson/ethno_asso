@@ -6,9 +6,9 @@ body {
   background-color: $base;
 }
 
+
 #logo {
-  margin: 0 auto;
-  width: fit-content;
+  margin: 10px 20px;
 }
 
 .container-flex {
@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   img {
-    width: 500px;
+    width: 400px;
   }
 }
+

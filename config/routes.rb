@@ -9,10 +9,12 @@ Rails.application.routes.draw do
   get "contact", to: "pages#contact"
   get "home", to: "pages#contact"
 
+
   
 
   resources :articles
   resources :ressources
+  resources :users,  only: [:show]
 
 
 

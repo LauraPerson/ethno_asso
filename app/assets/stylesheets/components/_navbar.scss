@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.navbar > div {
+  text-align: end;
+}
+
+.navbar div a {
+  color: $primary;
+  margin-right: 15px;
+  text-decoration: none;
+  padding: 12px;
+}
+
+.navbar #avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid $secondary;
+}

@@ -1,0 +1,21 @@
+<div class="navbar">
+  <div id="logo">
+    <%= link_to image_tag("logo.png", height: 80), root_path%>
+  </div>
+  <div>
+    <%= link_to image_tag("profil.jpg"), user_path(current_user), id:"avatar"%>
+    <div>
+      <% if user_signed_in? %>
+        <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to "Sign In", new_user_session_path  %>
+        <%= link_to "Sign Up", new_user_registration_path  %>
+      <% end %>
+    </div>
+    <%= link_to "À propos de nous", about_path, class:"underline-hover"  %>
+    <%= link_to "Nos Ressources", ressources_path, class:"underline-hover"  %>
+    <%= link_to "Nos articles!", articles_path, class:"underline-hover"  %>
+    <%= link_to "Contact", contact_path, class:"underline-hover"  %>
+    <%= link_to "Supportez-nous!", support_path, class:"underline-hover"  %>
+  </div>
+</div>
