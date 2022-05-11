@@ -1,0 +1,23 @@
+$primary: #EA4E25;
+$secondary: #CA9C52;
+$base: #f8f0e6;
+
+body {
+  background-color: $base;
+}
+
+
+#logo {
+  margin: 10px 20px;
+}
+
+.container-flex {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  img {
+    width: 400px;
+  }
+}
+

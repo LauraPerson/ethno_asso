@@ -1,0 +1,14 @@
+
+<div class="container center-element">
+
+  <%= image_tag "profil.jpg", class:"avatar avatar-big" %>
+  <p><%= @user.first_name %>&nbsp<%= @user.last_name %></p>
+  <p><%= @user.description %></p>
+
+   
+  <%= link_to edit_user_path(current_user), class:"btn-primary" do %>
+      Mettre mon profil à jour
+  <% end %>
+
+
+</div>

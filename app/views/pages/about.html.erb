@@ -1,1 +1,16 @@
-<h1>Qui sommes nous?</h1>
+
+<div class="container">
+  <h1>Qui sommes nous?</h1>
+  <% @admin_users.each do |user| %>
+    <div class="card-user card">
+      <%= image_tag "profil.jpg", style:"width:100px" %>
+      <% if user.first_name || user.last_name == nil %>  
+        <p><%= user.email %></p>
+      <% else %>
+        <p><%= user.first_name %></p>
+        <p><%= user.last_name %></p>
+        <p><%= user.description %></p>
+      <% end %>
+    </div>
+  <% end %>
+</div>
