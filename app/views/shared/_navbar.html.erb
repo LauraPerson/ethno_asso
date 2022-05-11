@@ -3,8 +3,10 @@
     <%= link_to image_tag("logo.png", height: 80), root_path%>
   </div>
   <div>
-    <%= link_to user_path(current_user) do %>
-     <%= image_tag "profil.jpg", class:"avatar avatar-small" %>
+    <% if current_user %>
+      <%= link_to user_path(current_user) do %>
+      <%= image_tag "profil.jpg", class:"avatar avatar-small" %>
+      <% end %>
     <% end %>
     <div>
       <% if user_signed_in? %>
