@@ -2,8 +2,8 @@
   "name": "ethno_asso",
   "private": true,
   "dependencies": {
-    "@rails/actioncable": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
+    "@rails/actioncable": "^6.0.5",
+    "@rails/ujs": "^6.0.5",
     "@rails/webpacker": "4.3.0",
     "turbolinks": "^5.2.0"
   },
